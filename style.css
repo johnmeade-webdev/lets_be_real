@@ -61,7 +61,7 @@ header h1 {
     grid-row: 3 / 5;
     height: 800px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 

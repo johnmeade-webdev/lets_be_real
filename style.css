@@ -42,7 +42,7 @@ header h1 {
     grid-row: 2;
     grid-column: 4 / 8;
     padding-left: 1rem;
-    border-left: solid .5rem rgba(93, 151, 103, 0.678);
+    border-left: solid .5rem rgba(104, 164, 233, 0.678);
 }
 
 .page-summary h2 {
@@ -50,6 +50,22 @@ header h1 {
     text-align: center;
     font-family: "Roboto";
     font-weight: 300;
+}
+
+.social-networks {
+    grid-row: 2;
+    grid-column: 1 / 4;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-networks span {
+    padding: 0 10%;
+    font-size: 3rem;
+    color: rgba(93, 151, 103, 0.678);
+    /* border: 2px solid black; */
 }
 
 .bloom-container {

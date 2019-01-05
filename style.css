@@ -95,3 +95,23 @@ span a {
 }
 
 
+
+footer {
+    grid-row: 5;
+    grid-column: 1 / 9;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+h6 {
+    text-align: center;
+    font-family: "Roboto";
+    margin: 0 0 5% 0;
+    padding: 0;
+}
+
+h6 a {
+    color: inherit;
+}
+

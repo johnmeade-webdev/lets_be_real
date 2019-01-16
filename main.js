@@ -11,9 +11,11 @@ function loadInstagram() {
             document.getElementById('insta1').style.backgroundImage = `url('${instaData.data[0].images.low_resolution.url}')`;
             document.getElementById('insta2').style.backgroundImage = `url('${instaData.data[1].images.low_resolution.url}')`;
             document.getElementById('insta3').style.backgroundImage = `url('${instaData.data[2].images.low_resolution.url}')`;
+            // document.getElementById('insta4').style.backgroundImage = `url('${instaData.data[3].images.low_resolution.url}')`;
             document.getElementById('insta1Cap').innerHTML = instaData.data[0].caption.text;
             document.getElementById('insta2Cap').innerHTML = instaData.data[1].caption.text;
             document.getElementById('insta3Cap').innerHTML = instaData.data[2].caption.text;
+            // document.getElementById('insta4Cap').innerHTML = instaData.data[3].caption.text;
 
         }
     };

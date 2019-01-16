@@ -159,10 +159,12 @@ input:focus, textarea:focus, button:focus  {
     flex-direction: row;
 }
 
-#insta1, #insta2, #insta3 {
+#insta1, #insta2, #insta3, #insta4 {
+    background-position: contain;
+    background-repeat: no-repeat;
     width: 320px;
     height: 400px;
-    margin: 0 1rem;
+    margin: 0 .5rem;
     box-shadow: 2px 2px 5px rgb(163, 160, 160),
                 -2px 2px 5px rgb(163, 160, 160),
                 2.25px 2.25px 3px black;
@@ -197,11 +199,19 @@ input:focus, textarea:focus, button:focus  {
     background-color: rgba(0, 0, 0, 0.582);
 }
 
+#youtube {
+    grid-row: 7;
+    grid-column: 1 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 
 footer {
-    grid-row: 7;
+    grid-row: 9;
     grid-column: 1 / 9;
     display: flex;
     align-items: baseline;

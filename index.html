@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Marck+Script|Poppins:500|Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
-    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -60,6 +60,29 @@
                 <input id='email_submit' type='submit' value='Add Me!'>
             </form>
         </aside>
+
+        <section class='instagram'>
+            <div id='instagram_feed'>
+                <div id='insta1'>
+                    <div class='caption_box'>
+                        <p id='insta1Cap'></p>
+                    </div>
+                </div>
+                <div id='insta2'>
+                    <div class='caption_box'>
+                        <p id='insta2Cap'></p>
+                    </div>
+                </div>
+                <div id='insta3'>
+                    <div class='caption_box'>
+                        <p id='insta3Cap'></p>
+                    </div>
+                </div>
+                <script>
+                    document.getElementById('instagram_feed').addEventListener('load', loadInstagram());
+                </script>
+            </div>
+        </section>
 
 
 

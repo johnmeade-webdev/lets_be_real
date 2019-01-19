@@ -148,24 +148,24 @@ input:focus, textarea:focus, button:focus  {
 }
 
 .instagram {
-    grid-row: 6 / 9;
-    grid-column: 2 / 5;
+    grid-row: 6;
+    grid-column: 1 / 9;
 }
 
 #instagram_feed {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 #insta1, #insta2, #insta3, #insta4 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 250px;
-    height: 250px;
-    margin: .5rem;
+    width: 350px;
+    height: 350px;
+    margin: .75rem;
     box-shadow: 2px 2px 5px rgb(163, 160, 160),
                 -2px 2px 5px rgb(163, 160, 160),
                 2.25px 2.25px 3px black;
@@ -176,10 +176,11 @@ input:focus, textarea:focus, button:focus  {
 
 .caption_box {
     overflow: scroll;
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
     color: white;
     padding: .5rem .5rem;
+    text-align: justify;
     transition: background-color 1s;
     -webkit-transition: background-color 1s;
     -moz-transition: background-color 1s;
@@ -201,12 +202,12 @@ input:focus, textarea:focus, button:focus  {
 }
 
 #youtube {
-    grid-row: 6 / 9;
-    grid-column: 5 / 8;
+    grid-row: 7;
+    grid-column: 1 / 9;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 #youtube iframe {

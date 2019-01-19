@@ -1,4 +1,5 @@
-const instagramURL = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=183267602.d926fa1.4c05afafd35445e4b8c176d732e54a02'
+const instagramURL = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=183267602.d926fa1.413c1151bafe4f6b8aa7556693c3809a';
+// const instagramURL = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=d42a2502d6304acab91870eda23e65d5';
 const instaRequest = new XMLHttpRequest();
 let instaData = {};
 
@@ -20,3 +21,4 @@ function loadInstagram() {
         }
     };
 };
+                                                                                                // d42a2502d6304acab91870eda23e65d5                                                             

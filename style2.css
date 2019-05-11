@@ -1,0 +1,395 @@
+/*****************/
+/* GLOBAL STYLES */
+/*****************/
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+@font-face {
+    font-family: spoiled;
+    src: url(fonts/spoiled/Spoiled.ttf);
+}
+
+.page-wrapper {
+    display: grid;
+    row-gap: .5rem;
+}
+
+/***************/
+/* HERO STYLES */
+/***************/
+
+header {
+    background: url('./pics/maddie_window_long.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: calc(100vh - 200px);
+    border: 1px solid rgba(255, 255, 255, 0);
+    grid-column: 1 / 9;
+    grid-row: 1;
+}
+
+header h1 {
+    padding: 5rem 0 0 5rem;
+    font-family: 'spoiled';
+    font-size: 6rem;
+    opacity: .3;
+    text-shadow: 2px 2px 2px white,
+                 -2px -2px 2px white;
+}
+
+/***************/
+/* MAIN STYLES */
+/***************/
+
+main {
+    grid-column: 1 / 9;
+    grid-row: 2;
+    display: flex;
+    flex-direction: row-reverse;
+    height: calc(200px - 1rem);
+}
+
+main div {
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: solid .5rem rgba(104, 164, 233, 0.678);
+}
+
+main div h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: .25rem;
+}
+
+main div p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    width: 70%;
+    font-size: 1.25rem;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.social-networks {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.social-networks span {
+    padding: 0 10%;
+    font-size: 3rem;
+    color: rgba(93, 151, 103, 0.678);
+}
+
+span a {
+    color: inherit;
+}
+
+/******************/
+/* ARTICLE STYLES */
+/******************/
+
+.home-article {
+    grid-column: 1 / 9;
+    grid-row: 3;
+    height: 100vh;
+    min-height: 400px;
+    background-image: url(./pics/bloom_pic_long.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-article div {
+    width: 100%;
+    height: auto;
+    /* width: 100%;
+    height: auto; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    background-color: rgba(255, 255, 255, 0.63);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/********************/
+/* SUBSCRIBE STYLES */
+/********************/
+
+.home-subscribe {
+    grid-column: 1 / 9;
+    grid-row: 4;
+    height: 150px;
+    background-color: rgba(93, 151, 103, 0.678);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    box-shadow: 1px 1px 10px black;
+}
+
+.home-subscribe form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-subscribe form p {
+    font-family: "Spoiled";
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+.home-subscribe form input {
+    height: 2rem;
+    margin: 0 .25rem;
+    padding: .5rem .5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+#mc-embedded-subscribe {
+    background-color: white;
+    /* border: 1px solid black; */
+    font-family: "Poppins", sans-serif;
+    transition-duration: 300ms;
+}
+
+#mc-embedded-subscribe:hover {
+    box-shadow: 2px 2px 2px black;
+}
+
+/********************/
+/* INSTAGRAM STYLES */
+/********************/
+
+.home-instagram {
+    grid-column: 1 / 9;
+    grid-row: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.insta-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 960px;
+    overflow: hidden;
+}
+
+.insta {
+    width: 150px;
+    height: 150px;
+    box-shadow: 3px 4px 2px rgba(0, 0, 0, 0.459);
+    background-position: contain;
+    margin: 5px;
+    transition-property: box-shadow;
+    transition-duration: 300ms;
+    opacity: .75;
+    transition-property: opacity;
+    transition-duration: 300ms;
+}
+
+.insta:hover {
+    box-shadow: 3px 4px 2px rgba(0, 0, 0, 0.459),
+                2px 2px 10px rgba(0, 0, 0, 0.459);
+    opacity: 1;
+}
+
+/* 
+.caption-box {
+    width: 100%;
+    height: 100%;
+    border: .25px solid rgba(255, 255, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: .85rem;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 300ms;
+    /* border: 2px solid black; */
+/* }
+
+.caption-box:hover {
+    background-color: rgba(234, 234, 248, 0.685);
+    opacity: 1;
+} */
+
+/********************/
+/* YOUTUBE STYLES */
+/********************/
+
+.home-youtube {
+    grid-column: 1 / 9;
+    grid-row: 6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    padding: 1rem 1rem;
+    background-color: rgb(243, 236, 236);
+}
+
+.youtube-wrapper {
+    width: 960px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.youtube-wrapper iframe {
+    width: 480px;
+    height: 250px;
+    margin: 5px;
+}
+
+/********************/
+/* FOOTER STYLES */
+/********************/
+
+footer {
+    grid-column: 1 / 9;
+    grid-row: 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: -2px 0px 5px rgb(108, 169, 177);
+    background-color: rgba(185, 220, 226, 0.959);
+    height: 100px;
+}
+
+footer h3, footer h4 {
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+    font-size: .75rem;
+}
+
+@media screen and (max-width: 950px){
+    .insta-wrapper {
+        width: 500px;
+    }
+    
+    .youtube-wrapper {
+        width: 700px;
+    }
+    .youtube-wrapper iframe {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    header h1 {
+        padding: 5rem 0 0 2rem;
+        font-size: 6rem;
+    }
+
+    main div h2 {
+        font-size: 1rem;
+    }
+    
+    main div p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    header h1 {
+        padding: 5rem 0 0 1rem;
+        font-size: 4rem;
+    }
+
+    main div h2 {
+        font-size: .9rem;
+    }
+    
+    main div p {
+        font-size: .9rem;
+    }
+
+    .youtube-wrapper {
+        width: 400px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .youtube-wrapper iframe {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 520px), (max-height: 400px){
+    header h1 {
+        padding: 1rem 0 0 1rem;
+        font-size: 4rem;
+    }
+    
+    main div h2 {
+        font-size: .85rem;
+    }
+    
+    main div p {
+        font-size: .85rem;
+    }
+    
+    .social-networks {
+        flex-direction: column-reverse;
+    }
+    
+    .social-networks span {
+        font-size: 2rem;
+    }
+
+    .home-article div {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: .95rem;
+        background-color: rgba(255, 255, 255, 0.63);
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-subscribe form p {
+        font-family: "Spoiled";
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    .insta-wrapper {
+        width: 320px;
+    }
+    
+}

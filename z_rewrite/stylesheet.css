@@ -210,12 +210,17 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 1rem;
+
 }
 
 .insta {
   height: calc((100vw/2) - 1rem);
   width: calc((100vw/2) - 1rem);
+  max-height: 150px;
+  max-width: 150px;
   margin: 2px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*---------------*/

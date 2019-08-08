@@ -32,17 +32,16 @@ body {
 /*---------------*/
 
 header {
-  background: url('./pics/maddie_window_400w.jpg');
+  background: url('./pics/maddie_window_500w.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: auto;
-  height: 172px;
+  height: 45vh;
 }
 
 h1 {
   font-family: 'spoiled', cursive;
-  font-size: 2rem;
+  font-size: 2.75rem;
   padding: 2rem 1rem;
   opacity: .6;
   text-shadow: 2px 2px 2px white,
@@ -63,7 +62,8 @@ h1 {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 172px);
+  height: 55vh;
+  min-height: 312px;
   justify-content: space-evenly;
 }
 
@@ -77,7 +77,7 @@ h1 {
 
 .welcome p {
   font-family: 'Roboto';
-  font-weight: 500;
+  font-weight: 100;
   text-align: center;
   padding-bottom: 1rem;
   padding-top: 1rem;
@@ -122,7 +122,7 @@ h1 {
 
 .home-article p {
   font-family: 'Roboto';
-  font-weight: 500;
+  font-weight: 100;
   text-align: center;
   padding: 1.5rem;
   background-color: #ffffff6e;
@@ -165,11 +165,14 @@ h1 {
               -2px -2px 1px #afaaaa;
   text-align: center;
   font-size: 1.25rem;
+  font-family: 'Roboto';
+  font-weight: 100;
 }
 
 #mc-embedded-subscribe {
   padding: .75rem;
-  font-family: 'poppins';
+  font-family: 'Roboto';
+  font-weight: 100;
   color: #504e4e;
   font-size: 1rem;
   background-color: white;
@@ -248,4 +251,112 @@ footer p {
 
 footer a {
   color: white;
+}
+
+@media screen and (min-width: 499px) {
+  header {
+    background: url('./pics/maddie_window_800w.jpg');
+    background-position: 50% 40%;
+  }
+
+  h1 {
+    font-family: 'spoiled', cursive;
+    font-size: 4.5rem;
+  }
+
+  .home-article {
+    height: 100vh;
+}
+
+  .home-article p {
+    font-size: 1.5rem;
+    padding: 1.5rem 3.5rem;
+  }
+
+  #vid1, #vid2 {
+    height: 350px;
+  }
+
+  #vid2 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 799px) {
+  header {
+    background: url('./pics/maddie_window_1200.jpg');
+    background-position: 50% 40%;
+  }
+
+  h1 {
+    font-size: 6.5rem;
+  }
+
+  .welcome h2 {
+    font-size: 2rem;
+  }
+
+  .welcome p {
+    font-size: 1.5rem;
+  }
+
+  .home-article {
+    height: 100vh;
+  }
+
+  .home-article p {
+    font-size: 1.65rem;
+    padding: 1.5rem 3.5rem;
+  }
+
+  #vid1, #vid2 {
+    height: 450px;
+  }
+
+  #vid2 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  header {
+    background: url('./pics/maddie_window_1600w.jpg');
+    background-position: 50% 40%;
+  }
+
+  h1 {
+    font-size: 8.5rem;
+    padding: 6rem;
+  }
+
+  .welcome h2 {
+    font-size: 2rem;
+  }
+
+  .welcome p {
+    font-size: 1.5rem;
+  }
+
+  .home-article {
+    height: 100vh;
+  }
+
+  .home-article p {
+    font-size: 1.75rem;
+    padding: 1.5rem 3.5rem;
+  }
+
+  #vid1, #vid2 {
+    height: 450px;
+    max-width: 800px;
+  }
+
+  #vid2 {
+    display: block;
+  }
+
+  .insta-wrapper {
+    max-width: 1000px;
+    margin: 1rem auto;
+  }
 }

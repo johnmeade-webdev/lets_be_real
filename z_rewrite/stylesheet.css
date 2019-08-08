@@ -1,0 +1,229 @@
+/*------------------*/
+/* Universal Styles */
+/*------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+p {
+  font-size: 1.15rem;
+}
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: spoiled;
+  src: url(../fonts/spoiled/Spoiled.ttf);
+}
+
+/*---------------*/
+/* Header Styles */
+/*---------------*/
+
+header {
+  background: url('./pics/maddie_window_400w.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 172px;
+}
+
+h1 {
+  font-family: 'spoiled', cursive;
+  font-size: 2rem;
+  padding: 2rem 1rem;
+  opacity: .6;
+  text-shadow: 2px 2px 2px white,
+               -2px -2px 2px white;
+  /* animation: welcome-slide 2s ease-in-out; */
+}
+
+/*-------------*/
+/* Main Styles */
+/*-------------*/
+
+@keyframes welcome-reveal {
+  0% {opacity: 0};
+  100% {opacity: 1};
+}
+
+.welcome {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 172px);
+  justify-content: space-evenly;
+}
+
+.welcome h2 {
+  position: relative;
+  font-family: 'Poppins';
+  font-size: 1.25rem;
+  text-align: center;
+  animation: welcome-reveal 2s;
+}
+
+.welcome p {
+  font-family: 'Roboto';
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  animation: welcome-reveal 2s;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border-top: 1px solid #d0d0dc;
+  padding-top: 1rem;
+  border-bottom: 1px solid #d0d0dc;
+  padding-bottom: 1rem;
+}
+
+@keyframes social-media-slide {
+  0% {opacity: 0; transform: translateX(30px)};
+  100% {opacity: 1; transform: translateX(0px)};
+}
+
+.social-networks span {
+  padding: 0 10%;
+  font-size: 1.75rem;
+  color: rgba(93, 151, 103, 0.678);
+  animation: social-media-slide 2s ease-in-out;
+}
+
+.social-networks span a {
+  color: inherit;
+}
+
+.home-article {
+  background-image: url(../pics/bloom_pic_long.png);
+  background-attachment: fixed;
+  background-position: left;
+  background-size: cover;
+  height: 150vh;
+  display: flex;
+  align-items: center;
+}
+
+.home-article p {
+  font-family: 'Roboto';
+  font-weight: 500;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #ffffff6e;
+}
+
+.home-subscribe {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mc_embed_signup {
+  width: 100%;
+}
+
+#mc-embedded-subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: .5rem 0;
+  background-color: rgba(93, 151, 103, 0.678);
+}
+
+#mc-embedded-subscribe-form p {
+  font-family: 'Spoiled', cursive;
+  font-size: 2rem;
+}
+
+#mce-EMAIL {
+  height: 2rem;
+  width: 100%;
+  margin: .5rem 0;
+  background-color: rgba(248, 251, 249, 0.678);
+  border: none;
+  box-shadow: 2px 2px 1px #afaaaa,
+              -2px 2px 1px #afaaaa,
+              2px -2px 1px #afaaaa,
+              -2px -2px 1px #afaaaa;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+#mc-embedded-subscribe {
+  padding: .75rem;
+  font-family: 'poppins';
+  color: #504e4e;
+  font-size: 1rem;
+  background-color: white;
+  border-radius: .25rem;
+  border: none;
+  transition: box-shadow 1s;
+}
+
+#mc-embedded-subscribe:hover {
+    box-shadow: 2px 2px 2px #424141;
+}
+
+/*----------------*/
+/* YouTube Styles */
+/*----------------*/
+
+.youtube-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.youtube-wrapper iframe {
+  padding-bottom: 1rem;
+  width: 95%;
+}
+
+#vid2 {
+  display: none;
+}
+
+/*---------------*/
+/* Footer Styles */
+/*---------------*/
+
+footer {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  background-color: rgb(107, 44, 44);
+  color: white;
+}
+
+footer h3 {
+  font-size: .75rem;  
+}
+
+footer p {
+  font-size: .65rem;
+}
+
+footer a {
+  color: white;
+}
